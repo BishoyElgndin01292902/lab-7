@@ -17,3 +17,13 @@ const keyMsg = document.getElementById('keyMsg');
 keyInput.addEventListener('keyup', (e) => {
   keyMsg.textContent = `You pressed: ${e.key}`;
 });
+
+
+// Form Events
+const form = document.getElementById('myForm');
+const formMsg = document.getElementById('formMsg');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault(); // prevent reload
+  formMsg.textContent = 'Form submitted successfully!';
+});
